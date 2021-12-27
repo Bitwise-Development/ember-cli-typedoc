@@ -1,6 +1,5 @@
 const TypeDoc = require('typedoc');
 
-
 module.exports = class TypeDocGenerator {
   async generate(config = {}) {
     const app = new TypeDoc.Application();
@@ -22,4 +21,4 @@ module.exports = class TypeDocGenerator {
       }
     }
   }
-}
+};

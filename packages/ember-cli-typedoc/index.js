@@ -1,7 +1,6 @@
 'use strict';
 const TypeDocGenerator = require('./lib/typedoc-generator');
 
-
 module.exports = {
   name: require('./package').name,
 
@@ -13,22 +12,30 @@ module.exports = {
       app = app.app;
     }
 
-    const addonOptions = (this.parent && this.parent.options) || (app && app.options) || {};
-    this.addonConfig   = addonOptions[this.name] || {};
-    this.addonEnabled  = this.addonConfig.enabled === true || process.env.EMBER_CLI_TYPEDOC === 'false';
+    const addonOptions =
+      (this.parent && this.parent.options) || (app && app.options) || {};
+
+    this.addonConfig = addonOptions[this.name] || {};
+
+    this.addonEnabled =
+      this.addonConfig.enabled === true ||
+      process.env.EMBER_CLI_TYPEDOC === 'false';
   },
 
   async outputReady() {
     if (this.addonEnabled) {
       const generator = new TypeDocGenerator();
 
-      const config = Object.assign({
-        entryPoints: [this.project.isEmberCLIAddon() ? './addon' : './app'],
-        entryPointStrategy: 'expand',
-        out: './docs',
-        json: './docs/docs.json',
-        logger: this.ui.writeLine.bind(this.ui),
-      }, this.addonConfig);
+      const config = Object.assign(
+        {
+          entryPoints: [this.project.isEmberCLIAddon() ? './addon' : './app'],
+          entryPointStrategy: 'expand',
+          out: './docs',
+          json: './docs/docs.json',
+          logger: this.ui.writeLine.bind(this.ui),
+        },
+        this.addonConfig
+      );
 
       this.ui.writeInfoLine('Running TypeDoc');
 

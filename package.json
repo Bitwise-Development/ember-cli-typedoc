@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-typedoc-workspace",
+  "name": "@bitwise/ember-cli-typedoc-workspace",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
