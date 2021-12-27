@@ -1,5 +1,5 @@
 {
-  "name": "ember-cli-typedoc",
+  "name": "@bitwise/ember-cli-typedoc",
   "version": "0.0.0",
   "description": "The default blueprint for ember-cli addons.",
   "keywords": [

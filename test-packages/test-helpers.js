@@ -2,16 +2,20 @@ const execa = require("execa");
 const { join } = require('path');
 
 module.exports = {
-    async gitReset(directory) {
-        await execa('git', ['clean', '-f', directory], { cwd: __dirname });
-        await execa('git', ['restore', directory], { cwd: __dirname });
+    async gitReset(testPackage) {
+        await execa('git', ['clean', '-f', testPackage], { cwd: __dirname });
+        await execa('git', ['restore', testPackage], { cwd: __dirname });
     },
 
-    async deleteDirectory(directory) {
-        await execa('rm', ['-rf', join(__dirname, directory)], { cwd: __dirname });
+    async deleteDirectory(testPackage, directory) {
+        await execa('rm', ['-rf', join(__dirname, testPackage, directory)], { cwd: __dirname });
     },
 
-    async ember(cmd, ... args) {
-        await execa('ember', [cmd, ...args]);
+    async ember(testPackage, command, commandArgs = [], environmentVars = {}) {
+        await execa('ember', [command, ...commandArgs], {
+            env: environmentVars,
+            cwd: join(__dirname, testPackage),
+            stdio: 'inherit',
+        });
     }
 }

@@ -27,6 +27,7 @@
     "ember-cli-htmlbars": "^5.7.2"
   },
   "devDependencies": {
+    "@bitwise/ember-cli-typedoc": "*",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
     "@embroider/test-setup": "^0.48.1",
