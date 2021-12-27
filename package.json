@@ -1,11 +1,9 @@
 {
   "name": "@bitwise/ember-cli-typedoc-workspace",
-  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runInBand"
   },
   "workspaces": [
     "packages/*",
@@ -14,7 +12,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "execa": "^6.0.0",
+    "execa": "^5.1.1",
     "jest": "^27.4.5"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/test-packages/*.test.js"
+    ]
   }
 }
