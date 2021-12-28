@@ -20,7 +20,7 @@ describe('addon documentation generation', function () {
 
     it('creates documentation when the env var is set', async function () {
         dir(`${BASE_PATH}/docs`).assertDoesNotExist();
-        await ember(TEST_PKG, 'build', [], { EMBER_CLI_TYPEDOC: 'true' });
+        await ember(TEST_PKG, 'build', [], { TYPEDOC: 'true' });
         dir(`${BASE_PATH}/docs`).assertExists();
     })
 });

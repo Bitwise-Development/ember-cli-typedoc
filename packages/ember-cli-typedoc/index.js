@@ -18,8 +18,7 @@ module.exports = {
     this.addonConfig = addonOptions[this.name] || {};
 
     this.addonEnabled =
-      this.addonConfig.enabled === true ||
-      process.env.EMBER_CLI_TYPEDOC === 'false';
+      this.addonConfig.enabled === true || process.env.TYPEDOC === 'true';
   },
 
   async outputReady() {
