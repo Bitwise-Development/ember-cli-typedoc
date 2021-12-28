@@ -20,6 +20,9 @@ module.exports = {
 
     this.addonEnabled =
       this.addonConfig.enabled === true || process.env.TYPEDOC === 'true';
+
+    // This is not a TypeDoc option, so it gets removed.
+    delete this.addonConfig.enabled;
   },
 
   async outputReady() {
