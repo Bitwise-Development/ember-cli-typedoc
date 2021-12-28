@@ -1,5 +1,6 @@
 'use strict';
 const TypeDocGenerator = require('./lib/typedoc-generator');
+const createLoggerBridge = require('./lib/logger-bridge');
 
 module.exports = {
   name: require('./package').name,
@@ -31,7 +32,7 @@ module.exports = {
           entryPointStrategy: 'expand',
           out: './docs',
           json: './docs/docs.json',
-          logger: this.ui.writeLine.bind(this.ui),
+          logger: createLoggerBridge(this.ui),
         },
         this.addonConfig
       );
