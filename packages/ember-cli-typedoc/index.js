@@ -36,6 +36,10 @@ module.exports = {
           out: './docs',
           json: './docs/docs.json',
           logger: createLoggerBridge(this.ui),
+          excludeExternals: true,
+          excludePrivate: true,
+          excludeProtected: true,
+          excludeInternal: true,
         },
         this.addonConfig
       );
