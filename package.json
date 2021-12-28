@@ -1,7 +1,24 @@
 {
   "name": "@bitwise/ember-cli-typedoc-workspace",
-  "description": "",
+  "description": "TypeDoc documentation generation for EmberCLI projects",
   "private": true,
+  "author": {
+    "name": "Michael Dean Jones",
+    "email": "michael@bitwise-development.com"
+  },
+  "license": "ISC",
+  "bugs": "https://github.com/Bitwise-Development/ember-cli-typedoc/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bitwise-Development/ember-cli-typedoc.git"
+  },
+  "keywords": [
+    "ember-addon",
+    "TypeDoc",
+    "TypeScript",
+    "docs",
+    "documentation"
+  ],
   "scripts": {
     "test": "jest --runInBand"
   },
@@ -9,8 +26,7 @@
     "packages/*",
     "test-packages/*"
   ],
-  "author": "",
-  "license": "ISC",
+
   "devDependencies": {
     "chai-files": "^1.4.0",
     "execa": "^5.1.1",
