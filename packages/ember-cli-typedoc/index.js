@@ -16,7 +16,7 @@ module.exports = {
     const addonOptions =
       (this.parent && this.parent.options) || (app && app.options) || {};
 
-    this.addonConfig = addonOptions[this.name] || {};
+    this.addonConfig = addonOptions['ember-cli-typedoc'] || {};
 
     this.addonEnabled =
       this.addonConfig.enabled === true || process.env.TYPEDOC === 'true';
