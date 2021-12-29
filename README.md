@@ -5,7 +5,7 @@ TypeDoc documentation generation for EmberCLI projects.
 
 ## Installation
 ```bash
-ember install @bitwise/ember-cli-typedoc
+ember install ember-cli-typedoc
 ```
 
 ## Usage

@@ -53,6 +53,11 @@
       },
       "release-it-yarn-workspaces": {
         "publish": false,
+        "additionalManifests": {
+          "dependencyUpdates": [
+            "test-packages/*/package.json"
+          ]
+        },
         "workspaces": [
           "packages/*"
         ]

@@ -8,8 +8,8 @@
 
 ## Linting
 
-* `npm run lint --workspace=@bitwise/ember-cli-typedoc`
-* `npm run lint:fix --workspace=@bitwise/ember-cli-typedoc`
+* `npm run lint --workspace=ember-cli-typedoc`
+* `npm run lint:fix --workspace=ember-cli-typedoc`
 
 ## Running tests
 
