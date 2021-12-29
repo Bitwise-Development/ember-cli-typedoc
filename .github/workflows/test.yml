@@ -11,8 +11,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: NPM install and test with coverage
       - uses: volta-cli/action@v1
-      - run: npm install
-      - run: npm run lint:js --workspace=ember-cli-typedoc
-      - run: npm run test:coverage
+      
+      - name: Run Tests
+        run: |
+          npm install
+          npm run lint:js --workspace=ember-cli-typedoc
+          npm run test:coverage
+          
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
