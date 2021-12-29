@@ -35,7 +35,8 @@ interpretation strategy. Private, protected, internal annotated, and external su
 Any configuration [offered by TypeDoc](https://typedoc.org/guides/options/) can be tweaked in the project's build
 config.
 
-Both HTML and JSON outputs are generated to a `/docs` directory, by default. The `out` and `json` arguments 
+Both HTML and JSON outputs are generated to a `/docs` directory, by default. The 
+[out](https://typedoc.org/guides/options/#out) and [json](https://typedoc.org/guides/options/#json) arguments 
 properties can be unset to limit this.
 
 For example, to undo the aforementioned class member slights while limiting your output to JSON:

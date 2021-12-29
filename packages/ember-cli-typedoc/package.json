@@ -1,13 +1,25 @@
 {
   "name": "@bitwise/ember-cli-typedoc",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "TypeDoc documentation generation for EmberCLI projects",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "TypeDoc",
+    "TypeScript",
+    "docs",
+    "documentation"
   ],
-  "repository": "",
-  "license": "MIT",
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bitwise-Development/ember-cli-typedoc.git",
+    "directory": "packages/ember-cli-typedoc"
+  },
+  "bugs": "https://github.com/Bitwise-Development/ember-cli-typedoc/issues",
+  "license": "ISC",
+  "author": {
+    "name": "Michael Dean Jones",
+    "email": "michael@bitwise-development.com"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
