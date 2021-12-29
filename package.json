@@ -13,7 +13,8 @@
   },
   "scripts": {
     "release": "dotenv release-it",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "test:coverage": "nyc npm test"
   },
   "workspaces": [
     "packages/*",
@@ -25,12 +26,21 @@
     "dotenv-cli": "^4.1.1",
     "execa": "^5.1.1",
     "jest": "^27.4.5",
+    "nyc": "^15.1.0",
     "release-it": "^14.11.8",
     "release-it-yarn-workspaces": "^2.0.1"
   },
   "jest": {
     "testMatch": [
       "<rootDir>/test-packages/*.test.js"
+    ]
+  },
+  "nyc": {
+    "all": true,
+    "reporter": ["lcov"],
+    "include": [
+      "packages/ember-cli-typedoc/index.js",
+      "packages/ember-cli-typedoc/lib/*.js"
     ]
   },
   "volta": {
