@@ -7,4 +7,4 @@ on:
 
 jobs:
   test:
-    uses: Bitwise-Development/ember-cli-typedoc/.github/workflows/test.yml@main
+    uses: Bitwise-Development/ember-cli-typedoc/.github/workflows/test.yml@master
