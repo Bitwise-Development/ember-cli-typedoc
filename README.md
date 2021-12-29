@@ -1,3 +1,4 @@
+[![npm version](https://badge.fury.io/js/ember-cli-typedoc.svg)](https://badge.fury.io/js/ember-cli-typedoc)
 [![CI](https://github.com/Bitwise-Development/ember-cli-typedoc/actions/workflows/ci.yml/badge.svg)](https://github.com/Bitwise-Development/ember-cli-typedoc/actions/workflows/ci.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Bitwise-Development/ember-cli-typedoc/badge.svg?branch=master)](https://coveralls.io/github/Bitwise-Development/ember-cli-typedoc?branch=master)
 
