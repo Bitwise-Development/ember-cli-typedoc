@@ -53,9 +53,18 @@
         "preset": {
           "name": "conventionalcommits",
           "types": [
-            {"type": "feat", "section": "Features"},
-            {"type": "fix", "section": "Bug Fixes"},
-            {"type": "chore", "section": "Chores"}
+            {
+              "type": "feat",
+              "section": "Features"
+            },
+            {
+              "type": "fix",
+              "section": "Bug Fixes"
+            },
+            {
+              "type": "chore",
+              "section": "Chores"
+            }
           ]
         }
       },
@@ -72,5 +81,5 @@
       }
     }
   },
-  "version": "0.0.1-1"
+  "version": "0.0.1"
 }
