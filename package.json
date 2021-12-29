@@ -12,6 +12,7 @@
     "url": "https://github.com/Bitwise-Development/ember-cli-typedoc.git"
   },
   "scripts": {
+    "release": "dotenv release-it",
     "test": "jest --runInBand"
   },
   "workspaces": [
