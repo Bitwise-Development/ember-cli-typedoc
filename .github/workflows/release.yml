@@ -18,8 +18,12 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - name: auto-dist-tag
-        run: npx auto-dist-tag@1 --write
+        run: npx auto-dist-tag --write
         working-directory: packages/ember-cli-typedoc
+      - name: copy readme
+        run: cp README.md packages/ember-cli-typedoc/README.md
+      - name: copy changelog
+        run: cp CHANGELOG.md packages/ember-cli-typedoc/CHANGELOG.md
 
       - run: npm publish
         working-directory: packages/ember-cli-typedoc

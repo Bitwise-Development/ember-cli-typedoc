@@ -20,12 +20,12 @@
     "test-packages/*"
   ],
   "devDependencies": {
+    "@release-it/conventional-changelog": "^3.3.0",
     "chai-files": "^1.4.0",
     "dotenv-cli": "^4.1.1",
     "execa": "^5.1.1",
     "jest": "^27.4.5",
     "release-it": "^14.11.8",
-    "release-it-lerna-changelog": "^4.0.1",
     "release-it-yarn-workspaces": "^2.0.1"
   },
   "jest": {
@@ -48,9 +48,16 @@
       "tokenRef": "GITHUB_AUTH"
     },
     "plugins": {
-      "release-it-lerna-changelog": {
+      "@release-it/conventional-changelog": {
         "infile": "CHANGELOG.md",
-        "launchEditor": false
+        "preset": {
+          "name": "conventionalcommits",
+          "types": [
+            {"type": "feat", "section": "Features"},
+            {"type": "fix", "section": "Bug Fixes"},
+            {"type": "chore", "section": "Chores"}
+          ]
+        }
       },
       "release-it-yarn-workspaces": {
         "publish": false,
