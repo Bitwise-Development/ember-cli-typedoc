@@ -32,7 +32,9 @@
   },
   "jest": {
     "collectCoverage": false,
-    "coverageReporters": ["json"],
+    "coverageReporters": [
+      "json"
+    ],
     "testMatch": [
       "<rootDir>/test-packages/*.test.js"
     ]
@@ -40,7 +42,10 @@
   "nyc": {
     "all": true,
     "tempDirectory": "./coverage",
-    "reporter": ["lcov", "text"],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
     "include": [
       "packages/ember-cli-typedoc/index.js",
       "packages/ember-cli-typedoc/lib/*.js"
@@ -94,5 +99,5 @@
       }
     }
   },
-  "version": "0.0.1"
+  "version": "1.0.0"
 }
