@@ -14,7 +14,7 @@
   "scripts": {
     "release": "dotenv release-it",
     "test": "jest --runInBand",
-    "test:coverage": "nyc npm test"
+    "test:coverage": "nyc --clean jest --runInBand --collectCoverage=true"
   },
   "workspaces": [
     "packages/*",
@@ -31,13 +31,16 @@
     "release-it-yarn-workspaces": "^2.0.1"
   },
   "jest": {
+    "collectCoverage": false,
+    "coverageReporters": ["json"],
     "testMatch": [
       "<rootDir>/test-packages/*.test.js"
     ]
   },
   "nyc": {
     "all": true,
-    "reporter": ["lcov"],
+    "tempDirectory": "./coverage",
+    "reporter": ["lcov", "text"],
     "include": [
       "packages/ember-cli-typedoc/index.js",
       "packages/ember-cli-typedoc/lib/*.js"

@@ -54,4 +54,30 @@ describe('addon documentation generation', function () {
     await ember(TEST_PKG, 'build');
     dir(`${BASE_PATH}/docs`).assertDoesNotExist();
   });
+
+  it('only creates JSON output when configured', async function () {
+    dir(`${BASE_PATH}/docs`).assertDoesNotExist();
+
+    addCLIConfig(TEST_PKG, { 'ember-cli-typedoc': { enabled: true, out: null } });
+    await ember(TEST_PKG, 'build');
+
+    dir(`${BASE_PATH}/docs`).assertExists();
+    file(`${BASE_PATH}/docs/index.html`).assertDoesNotExist();
+    file(`${BASE_PATH}/docs/docs.json`).assertIsNotEmpty();
+
+    expect(readFile(TEST_PKG, 'docs/docs.json', true)).toMatchSnapshot();
+  });
+
+  it('only creates HTML output when configured', async function () {
+    dir(`${BASE_PATH}/docs`).assertDoesNotExist();
+
+    addCLIConfig(TEST_PKG, { 'ember-cli-typedoc': { enabled: true, json: null } });
+    await ember(TEST_PKG, 'build');
+
+    dir(`${BASE_PATH}/docs`).assertExists();
+    file(`${BASE_PATH}/docs/index.html`).assertIsNotEmpty();
+    file(`${BASE_PATH}/docs/docs.json`).assertDoesNotExist();
+
+    expect(readFile(TEST_PKG, 'docs/index.html')).toMatchSnapshot();
+  });
 });

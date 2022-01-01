@@ -70,9 +70,9 @@ async function deleteDirectory(testPackage, directory) {
  */
 async function ember(testPackage, command, commandArgs = [], env = {}) {
   const cwd  = getTestPackagePath(testPackage);
-  const args = [command, ...commandArgs];
+  const args = ['ember', command, ...commandArgs];
 
-  await execa('ember', args, { env, cwd, stdio: 'inherit' });
+  await execa('npx', args, { env, cwd, stdio: 'inherit' });
 }
 
 /**
