@@ -46,7 +46,7 @@
     "@embroider/test-setup": "^0.49.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.2.4",
-    "ember-cli": "^4.0.1",
+    "ember-cli": "^4.1.0",
     "ember-cli-htmlbars": "^6.0.1",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
