@@ -21,7 +21,7 @@
     "test-packages/*"
   ],
   "devDependencies": {
-    "@release-it/conventional-changelog": "^3.3.0",
+    "@release-it/conventional-changelog": "^4.0.0",
     "chai-files": "^1.4.0",
     "dotenv-cli": "^4.1.1",
     "execa": "^5.1.1",
