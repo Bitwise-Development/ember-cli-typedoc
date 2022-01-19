@@ -26,13 +26,13 @@
   },
   "dependencies": {
     "ember-cli-babel": "^7.26.10",
-    "ember-cli-htmlbars": "^5.7.2",
+    "ember-cli-htmlbars": "^6.0.1",
     "ember-cli-typescript": "^4.2.1"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
-    "@embroider/test-setup": "^0.49.0",
+    "@embroider/test-setup": "^1.0.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "@types/ember__application": "^3.16.3",
@@ -58,7 +58,7 @@
     "@types/qunit": "^2.11.3",
     "@types/rsvp": "^4.0.4",
     "broccoli-asset-rev": "^3.0.0",
-    "ember-auto-import": "^2.2.4",
+    "ember-auto-import": "^2.3.0",
     "ember-cli": "^4.1.0",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
@@ -73,9 +73,9 @@
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
     "qunit": "^2.17.2",
-    "qunit-dom": "^1.6.0",
+    "qunit-dom": "^2.0.0",
     "typescript": "^4.5.4",
-    "webpack": "^5.65.0"
+    "webpack": "^5.66.0"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"

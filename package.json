@@ -21,13 +21,13 @@
     "test-packages/*"
   ],
   "devDependencies": {
-    "@release-it/conventional-changelog": "^3.3.0",
+    "@release-it/conventional-changelog": "^4.1.0",
     "chai-files": "^1.4.0",
     "dotenv-cli": "^4.1.1",
     "execa": "^5.1.1",
-    "jest": "^27.4.5",
+    "jest": "^27.4.7",
     "nyc": "^15.1.0",
-    "release-it": "^14.11.8",
+    "release-it": "^14.12.3",
     "release-it-yarn-workspaces": "^2.0.1"
   },
   "jest": {
