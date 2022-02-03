@@ -80,4 +80,17 @@ describe('addon documentation generation', function () {
 
     expect(readFile(TEST_PKG, 'docs/index.html')).toMatchSnapshot();
   });
+
+  it('creates documentation into the the /dist directory', async function () {
+    dir(`${BASE_PATH}/dist/docs`).assertDoesNotExist();
+
+    addCLIConfig(TEST_PKG, { 'ember-cli-typedoc': { enabled: true, out: 'dist/docs', json: 'dist/docs/docs.json' } });
+    await ember(TEST_PKG, 'build');
+
+    dir(`${BASE_PATH}/dist/docs`).assertExists();
+    file(`${BASE_PATH}/dist/docs/index.html`).assertIsNotEmpty();
+    file(`${BASE_PATH}/dist/docs/docs.json`).assertIsNotEmpty();
+
+    expect(readFile(TEST_PKG, 'dist/docs/docs.json', true)).toMatchSnapshot();
+  });
 });

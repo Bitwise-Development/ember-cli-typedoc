@@ -1,5 +1,134 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`addon documentation generation creates documentation into the the /dist directory 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "flags": Object {},
+          "id": 2,
+          "inheritedFrom": Object {
+            "name": "Component.constructor",
+            "type": "reference",
+          },
+          "kind": 512,
+          "kindString": "Constructor",
+          "name": "constructor",
+          "signatures": Array [
+            Object {
+              "comment": Object {
+                "shortText": "Constructs a new component and assigns itself the passed properties. You
+should not construct new components yourself. Instead, Glimmer will
+instantiate new components automatically as it renders.",
+              },
+              "flags": Object {},
+              "id": 3,
+              "inheritedFrom": Object {
+                "name": "Component.constructor",
+                "type": "reference",
+              },
+              "kind": 16384,
+              "kindString": "Constructor signature",
+              "name": "new default",
+              "parameters": Array [
+                Object {
+                  "comment": Object {},
+                  "flags": Object {},
+                  "id": 4,
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "name": "owner",
+                  "type": Object {
+                    "name": "unknown",
+                    "type": "intrinsic",
+                  },
+                },
+                Object {
+                  "comment": Object {
+                    "shortText": "
+",
+                  },
+                  "flags": Object {},
+                  "id": 5,
+                  "kind": 32768,
+                  "kindString": "Parameter",
+                  "name": "args",
+                  "type": Object {
+                    "declaration": Object {
+                      "flags": Object {},
+                      "id": 6,
+                      "kind": 65536,
+                      "kindString": "Type literal",
+                      "name": "__type",
+                    },
+                    "type": "reflection",
+                  },
+                },
+              ],
+              "type": Object {
+                "id": 1,
+                "name": "default",
+                "type": "reference",
+              },
+            },
+          ],
+        },
+      ],
+      "extendedTypes": Array [
+        Object {
+          "name": "Component",
+          "type": "reference",
+        },
+      ],
+      "flags": Object {},
+      "groups": Array [
+        Object {
+          "children": Array [
+            2,
+          ],
+          "kind": 512,
+          "title": "Constructors",
+        },
+      ],
+      "id": 1,
+      "kind": 128,
+      "kindString": "Class",
+      "name": "default",
+      "sources": Array [
+        Object {
+          "character": 21,
+          "fileName": "test-packages/test-addon/addon/components/test-component.ts",
+          "line": 3,
+        },
+      ],
+    },
+  ],
+  "flags": Object {},
+  "groups": Array [
+    Object {
+      "children": Array [
+        1,
+      ],
+      "kind": 128,
+      "title": "Classes",
+    },
+  ],
+  "id": 0,
+  "kind": 1,
+  "kindString": "Project",
+  "name": "test-addon",
+  "originalName": "",
+  "sources": Array [
+    Object {
+      "character": 0,
+      "fileName": "test-packages/test-addon/addon/components/test-component.ts",
+      "line": 1,
+    },
+  ],
+}
+`;
+
 exports[`addon documentation generation creates documentation when the "enabled" config flag is set 1`] = `
 Object {
   "children": Array [
