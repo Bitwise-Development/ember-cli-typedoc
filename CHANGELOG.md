@@ -1,3 +1,15 @@
+## [1.1.0](https://github.com/Bitwise-Development/ember-cli-typedoc/compare/v1.0.0...v1.1.0) (2022-02-03)
+
+
+### Features
+
+* refactor into broccoli plugin ([aefa5ea](https://github.com/Bitwise-Development/ember-cli-typedoc/commit/aefa5eae201dbf63b2648b5e728ee7b4d08e9e78))
+
+
+### Chores
+
+* dependency bumps ([751748c](https://github.com/Bitwise-Development/ember-cli-typedoc/commit/751748c9f2b5f8047d33bf949bf42efc80b5817e))
+
 ## [1.0.0](https://github.com/Bitwise-Development/ember-cli-typedoc/compare/v0.0.1...v1.0.0) (2022-01-01)
 
 
