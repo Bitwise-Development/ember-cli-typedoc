@@ -35,6 +35,7 @@ module.exports = {
         './config/**/*.js',
         './tests/dummy/config/**/*.js',
         './lib/**/*.js',
+        './scripts/**/*.js',
       ],
       parserOptions: {
         sourceType: 'script',
