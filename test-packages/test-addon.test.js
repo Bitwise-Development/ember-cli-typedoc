@@ -27,6 +27,7 @@ describe('addon documentation generation', function () {
   it('creates documentation when the env var is set', async function () {
     dir(`${BASE_PATH}/docs`).assertDoesNotExist();
 
+    addCLIConfig(TEST_PKG, { 'ember-cli-typedoc': {} });
     await ember(TEST_PKG, 'build', [], { TYPEDOC: 'true' });
 
     dir(`${BASE_PATH}/docs`).assertExists();

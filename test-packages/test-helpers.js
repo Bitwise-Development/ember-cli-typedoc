@@ -84,13 +84,16 @@ async function ember(testPackage, command, commandArgs = [], env = {}) {
  * @returns {void}
  */
 function addCLIConfig(testPackage, configObject) {
-  const filePath     = getTestPackagePath(testPackage, 'ember-cli-build.js');
-  const content      = readFileSync(filePath, { encoding: 'utf-8' });
-  const configString = JSON.stringify(configObject);
+  const filePath = getTestPackagePath(testPackage, 'ember-cli-build.js');
+  const content  = readFileSync(filePath, { encoding: 'utf-8' });
+
+  if (typeof configObject['ember-cli-typedoc'] === 'object') {
+    configObject['ember-cli-typedoc'].sourceLinkTemplate = '{path}#line={line}';
+  }
 
   writeFileSync(
     filePath,
-    content.replace('/* Add options here */', configString),
+    content.replace('/* Add options here */', JSON.stringify(configObject)),
     { encoding: 'utf-8' }
   );
 }
