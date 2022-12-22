@@ -89,6 +89,7 @@ function addCLIConfig(testPackage, configObject) {
 
   if (typeof configObject['ember-cli-typedoc'] === 'object') {
     configObject['ember-cli-typedoc'].sourceLinkTemplate = '{path}#line={line}';
+    configObject['ember-cli-typedoc'].readme = 'none';
   }
 
   writeFileSync(
