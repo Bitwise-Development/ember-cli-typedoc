@@ -41,7 +41,7 @@ Both HTML and JSON outputs are generated to a `/docs` directory, by default. The
 [out](https://typedoc.org/guides/options/#out) and [json](https://typedoc.org/guides/options/#json) arguments 
 properties can be unset to limit this.
 
-For example, to undo the aforementioned class member slights while limiting your output to JSON:
+For example, to include everything that is ignored by default while out limiting your output to JSON:
 
 ```js
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
@@ -54,7 +54,7 @@ module.exports = function (defaults) {
       excludePrivate: false,
       excludeProtected: false,
       excludeInternal: false,
-      out: undefined,
+      out: null,
     },
   });
 };
