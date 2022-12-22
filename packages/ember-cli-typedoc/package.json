@@ -38,13 +38,15 @@
     "test:ember": "ember test",
     "test:ember-compatibility": "ember try:each"
   },
+  "peerDependencies": {
+    "typedoc": "^0.23.23"
+  },
   "dependencies": {
     "broccoli-caching-writer": "^3.0.3",
     "broccoli-funnel": "^3.0.8",
     "broccoli-merge-trees": "^4.2.0",
     "ember-cli-babel": "^7.26.6",
-    "execa": "^5.1.1",
-    "typedoc": "^0.22.10"
+    "execa": "^5.1.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.16.5",
