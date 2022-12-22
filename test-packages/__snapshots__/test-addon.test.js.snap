@@ -6,7 +6,9 @@ Object {
     Object {
       "children": Array [
         Object {
-          "flags": Object {},
+          "flags": Object {
+            "isExternal": true,
+          },
           "id": 2,
           "inheritedFrom": Object {
             "name": "Component.constructor",
@@ -18,11 +20,18 @@ Object {
           "signatures": Array [
             Object {
               "comment": Object {
-                "shortText": "Constructs a new component and assigns itself the passed properties. You
+                "summary": Array [
+                  Object {
+                    "kind": "text",
+                    "text": "Constructs a new component and assigns itself the passed properties. You
 should not construct new components yourself. Instead, Glimmer will
 instantiate new components automatically as it renders.",
+                  },
+                ],
               },
-              "flags": Object {},
+              "flags": Object {
+                "isExternal": true,
+              },
               "id": 3,
               "inheritedFrom": Object {
                 "name": "Component.constructor",
@@ -33,8 +42,9 @@ instantiate new components automatically as it renders.",
               "name": "new default",
               "parameters": Array [
                 Object {
-                  "comment": Object {},
-                  "flags": Object {},
+                  "flags": Object {
+                    "isExternal": true,
+                  },
                   "id": 4,
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -45,18 +55,18 @@ instantiate new components automatically as it renders.",
                   },
                 },
                 Object {
-                  "comment": Object {
-                    "shortText": "
-",
+                  "flags": Object {
+                    "isExternal": true,
                   },
-                  "flags": Object {},
                   "id": 5,
                   "kind": 32768,
                   "kindString": "Parameter",
                   "name": "args",
                   "type": Object {
                     "declaration": Object {
-                      "flags": Object {},
+                      "flags": Object {
+                        "isExternal": true,
+                      },
                       "id": 6,
                       "kind": 65536,
                       "kindString": "Type literal",
@@ -73,11 +83,20 @@ instantiate new components automatically as it renders.",
               },
             },
           ],
+          "sources": Array [
+            Object {
+              "character": 4,
+              "fileName": "node_modules/@glimmer/component/dist/types/addon/-private/component.d.ts",
+              "line": 134,
+            },
+          ],
         },
       ],
       "extendedTypes": Array [
         Object {
-          "name": "Component",
+          "name": "default",
+          "package": "@glimmer/component",
+          "qualifiedName": "Component",
           "type": "reference",
         },
       ],
@@ -87,7 +106,6 @@ instantiate new components automatically as it renders.",
           "children": Array [
             2,
           ],
-          "kind": 512,
           "title": "Constructors",
         },
       ],
@@ -100,6 +118,7 @@ instantiate new components automatically as it renders.",
           "character": 21,
           "fileName": "test-packages/test-addon/addon/components/test-component.ts",
           "line": 3,
+          "url": "https://github.com/Bitwise-Development/ember-cli-typedoc/blob/d42f676/test-packages/test-addon/addon/components/test-component.ts#L3",
         },
       ],
     },
@@ -110,7 +129,6 @@ instantiate new components automatically as it renders.",
       "children": Array [
         1,
       ],
-      "kind": 128,
       "title": "Classes",
     },
   ],
@@ -124,6 +142,7 @@ instantiate new components automatically as it renders.",
       "character": 0,
       "fileName": "test-packages/test-addon/addon/components/test-component.ts",
       "line": 1,
+      "url": "https://github.com/Bitwise-Development/ember-cli-typedoc/blob/d42f676/test-packages/test-addon/addon/components/test-component.ts#L1",
     },
   ],
 }
@@ -135,7 +154,9 @@ Object {
     Object {
       "children": Array [
         Object {
-          "flags": Object {},
+          "flags": Object {
+            "isExternal": true,
+          },
           "id": 2,
           "inheritedFrom": Object {
             "name": "Component.constructor",
@@ -147,11 +168,18 @@ Object {
           "signatures": Array [
             Object {
               "comment": Object {
-                "shortText": "Constructs a new component and assigns itself the passed properties. You
+                "summary": Array [
+                  Object {
+                    "kind": "text",
+                    "text": "Constructs a new component and assigns itself the passed properties. You
 should not construct new components yourself. Instead, Glimmer will
 instantiate new components automatically as it renders.",
+                  },
+                ],
               },
-              "flags": Object {},
+              "flags": Object {
+                "isExternal": true,
+              },
               "id": 3,
               "inheritedFrom": Object {
                 "name": "Component.constructor",
@@ -162,8 +190,9 @@ instantiate new components automatically as it renders.",
               "name": "new default",
               "parameters": Array [
                 Object {
-                  "comment": Object {},
-                  "flags": Object {},
+                  "flags": Object {
+                    "isExternal": true,
+                  },
                   "id": 4,
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -174,18 +203,18 @@ instantiate new components automatically as it renders.",
                   },
                 },
                 Object {
-                  "comment": Object {
-                    "shortText": "
-",
+                  "flags": Object {
+                    "isExternal": true,
                   },
-                  "flags": Object {},
                   "id": 5,
                   "kind": 32768,
                   "kindString": "Parameter",
                   "name": "args",
                   "type": Object {
                     "declaration": Object {
-                      "flags": Object {},
+                      "flags": Object {
+                        "isExternal": true,
+                      },
                       "id": 6,
                       "kind": 65536,
                       "kindString": "Type literal",
@@ -202,11 +231,20 @@ instantiate new components automatically as it renders.",
               },
             },
           ],
+          "sources": Array [
+            Object {
+              "character": 4,
+              "fileName": "node_modules/@glimmer/component/dist/types/addon/-private/component.d.ts",
+              "line": 134,
+            },
+          ],
         },
       ],
       "extendedTypes": Array [
         Object {
-          "name": "Component",
+          "name": "default",
+          "package": "@glimmer/component",
+          "qualifiedName": "Component",
           "type": "reference",
         },
       ],
@@ -216,7 +254,6 @@ instantiate new components automatically as it renders.",
           "children": Array [
             2,
           ],
-          "kind": 512,
           "title": "Constructors",
         },
       ],
@@ -229,6 +266,7 @@ instantiate new components automatically as it renders.",
           "character": 21,
           "fileName": "test-packages/test-addon/addon/components/test-component.ts",
           "line": 3,
+          "url": "https://github.com/Bitwise-Development/ember-cli-typedoc/blob/d42f676/test-packages/test-addon/addon/components/test-component.ts#L3",
         },
       ],
     },
@@ -239,7 +277,6 @@ instantiate new components automatically as it renders.",
       "children": Array [
         1,
       ],
-      "kind": 128,
       "title": "Classes",
     },
   ],
@@ -253,6 +290,7 @@ instantiate new components automatically as it renders.",
       "character": 0,
       "fileName": "test-packages/test-addon/addon/components/test-component.ts",
       "line": 1,
+      "url": "https://github.com/Bitwise-Development/ember-cli-typedoc/blob/d42f676/test-packages/test-addon/addon/components/test-component.ts#L1",
     },
   ],
 }
@@ -264,7 +302,9 @@ Object {
     Object {
       "children": Array [
         Object {
-          "flags": Object {},
+          "flags": Object {
+            "isExternal": true,
+          },
           "id": 2,
           "inheritedFrom": Object {
             "name": "Component.constructor",
@@ -276,11 +316,18 @@ Object {
           "signatures": Array [
             Object {
               "comment": Object {
-                "shortText": "Constructs a new component and assigns itself the passed properties. You
+                "summary": Array [
+                  Object {
+                    "kind": "text",
+                    "text": "Constructs a new component and assigns itself the passed properties. You
 should not construct new components yourself. Instead, Glimmer will
 instantiate new components automatically as it renders.",
+                  },
+                ],
               },
-              "flags": Object {},
+              "flags": Object {
+                "isExternal": true,
+              },
               "id": 3,
               "inheritedFrom": Object {
                 "name": "Component.constructor",
@@ -291,8 +338,9 @@ instantiate new components automatically as it renders.",
               "name": "new default",
               "parameters": Array [
                 Object {
-                  "comment": Object {},
-                  "flags": Object {},
+                  "flags": Object {
+                    "isExternal": true,
+                  },
                   "id": 4,
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -303,18 +351,18 @@ instantiate new components automatically as it renders.",
                   },
                 },
                 Object {
-                  "comment": Object {
-                    "shortText": "
-",
+                  "flags": Object {
+                    "isExternal": true,
                   },
-                  "flags": Object {},
                   "id": 5,
                   "kind": 32768,
                   "kindString": "Parameter",
                   "name": "args",
                   "type": Object {
                     "declaration": Object {
-                      "flags": Object {},
+                      "flags": Object {
+                        "isExternal": true,
+                      },
                       "id": 6,
                       "kind": 65536,
                       "kindString": "Type literal",
@@ -331,11 +379,20 @@ instantiate new components automatically as it renders.",
               },
             },
           ],
+          "sources": Array [
+            Object {
+              "character": 4,
+              "fileName": "node_modules/@glimmer/component/dist/types/addon/-private/component.d.ts",
+              "line": 134,
+            },
+          ],
         },
       ],
       "extendedTypes": Array [
         Object {
-          "name": "Component",
+          "name": "default",
+          "package": "@glimmer/component",
+          "qualifiedName": "Component",
           "type": "reference",
         },
       ],
@@ -345,7 +402,6 @@ instantiate new components automatically as it renders.",
           "children": Array [
             2,
           ],
-          "kind": 512,
           "title": "Constructors",
         },
       ],
@@ -358,6 +414,7 @@ instantiate new components automatically as it renders.",
           "character": 21,
           "fileName": "test-packages/test-addon/addon/components/test-component.ts",
           "line": 3,
+          "url": "https://github.com/Bitwise-Development/ember-cli-typedoc/blob/d42f676/test-packages/test-addon/addon/components/test-component.ts#L3",
         },
       ],
     },
@@ -368,7 +425,6 @@ instantiate new components automatically as it renders.",
       "children": Array [
         1,
       ],
-      "kind": 128,
       "title": "Classes",
     },
   ],
@@ -382,13 +438,28 @@ instantiate new components automatically as it renders.",
       "character": 0,
       "fileName": "test-packages/test-addon/addon/components/test-component.ts",
       "line": 1,
+      "url": "https://github.com/Bitwise-Development/ember-cli-typedoc/blob/d42f676/test-packages/test-addon/addon/components/test-component.ts#L1",
     },
   ],
 }
 `;
 
 exports[`addon documentation generation only creates HTML output when configured 1`] = `
-"<!DOCTYPE html><html class=\\"default\\"><head><meta charSet=\\"utf-8\\"/><meta http-equiv=\\"x-ua-compatible\\" content=\\"IE=edge\\"/><title>test-addon</title><meta name=\\"description\\" content=\\"Documentation for test-addon\\"/><meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\"/><link rel=\\"stylesheet\\" href=\\"assets/style.css\\"/><link rel=\\"stylesheet\\" href=\\"assets/highlight.css\\"/><script async src=\\"assets/search.js\\" id=\\"search-script\\"></script></head><body><script>document.body.classList.add(localStorage.getItem(\\"tsd-theme\\") || \\"os\\")</script><header><div class=\\"tsd-page-toolbar\\"><div class=\\"container\\"><div class=\\"table-wrap\\"><div class=\\"table-cell\\" id=\\"tsd-search\\" data-base=\\".\\"><div class=\\"field\\"><label for=\\"tsd-search-field\\" class=\\"tsd-widget search no-caption\\">Search</label><input type=\\"text\\" id=\\"tsd-search-field\\"/></div><ul class=\\"results\\"><li class=\\"state loading\\">Preparing search index...</li><li class=\\"state failure\\">The search index is not available</li></ul><a href=\\"index.html\\" class=\\"title\\">test-addon</a></div><div class=\\"table-cell\\" id=\\"tsd-widgets\\"><div id=\\"tsd-filter\\"><a href=\\"#\\" class=\\"tsd-widget options no-caption\\" data-toggle=\\"options\\">Options</a><div class=\\"tsd-filter-group\\"><div class=\\"tsd-select\\" id=\\"tsd-filter-visibility\\"><span class=\\"tsd-select-label\\">All</span><ul class=\\"tsd-select-list\\"><li data-value=\\"public\\">Public</li><li data-value=\\"protected\\">Public/Protected</li><li data-value=\\"private\\" class=\\"selected\\">All</li></ul></div> <input type=\\"checkbox\\" id=\\"tsd-filter-inherited\\" checked/><label class=\\"tsd-widget\\" for=\\"tsd-filter-inherited\\">Inherited</label></div></div><a href=\\"#\\" class=\\"tsd-widget menu no-caption\\" data-toggle=\\"menu\\">Menu</a></div></div></div></div><div class=\\"tsd-page-title\\"><div class=\\"container\\"><h1>test-addon</h1></div></div></header><div class=\\"container container-main\\"><div class=\\"row\\"><div class=\\"col-8 col-content\\"><div class=\\"tsd-panel tsd-typography\\"><p><a href=\\"https://badge.fury.io/js/ember-cli-typedoc\\"><img src=\\"https://badge.fury.io/js/ember-cli-typedoc.svg\\" alt=\\"npm version\\"></a>
+"<!DOCTYPE html><html class=\\"default\\" lang=\\"en\\"><head><meta charSet=\\"utf-8\\"/><meta http-equiv=\\"x-ua-compatible\\" content=\\"IE=edge\\"/><title>test-addon</title><meta name=\\"description\\" content=\\"Documentation for test-addon\\"/><meta name=\\"viewport\\" content=\\"width=device-width, initial-scale=1\\"/><link rel=\\"stylesheet\\" href=\\"assets/style.css\\"/><link rel=\\"stylesheet\\" href=\\"assets/highlight.css\\"/><script async src=\\"assets/search.js\\" id=\\"search-script\\"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem(\\"tsd-theme\\") || \\"os\\"</script><header class=\\"tsd-page-toolbar\\">
+<div class=\\"tsd-toolbar-contents container\\">
+<div class=\\"table-cell\\" id=\\"tsd-search\\" data-base=\\".\\">
+<div class=\\"field\\"><label for=\\"tsd-search-field\\" class=\\"tsd-widget tsd-toolbar-icon search no-caption\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><path d=\\"M15.7824 13.833L12.6666 10.7177C12.5259 10.5771 12.3353 10.499 12.1353 10.499H11.6259C12.4884 9.39596 13.001 8.00859 13.001 6.49937C13.001 2.90909 10.0914 0 6.50048 0C2.90959 0 0 2.90909 0 6.49937C0 10.0896 2.90959 12.9987 6.50048 12.9987C8.00996 12.9987 9.39756 12.4863 10.5008 11.6239V12.1332C10.5008 12.3332 10.5789 12.5238 10.7195 12.6644L13.8354 15.7797C14.1292 16.0734 14.6042 16.0734 14.8948 15.7797L15.7793 14.8954C16.0731 14.6017 16.0731 14.1267 15.7824 13.833ZM6.50048 10.499C4.29094 10.499 2.50018 8.71165 2.50018 6.49937C2.50018 4.29021 4.28781 2.49976 6.50048 2.49976C8.71001 2.49976 10.5008 4.28708 10.5008 6.49937C10.5008 8.70852 8.71314 10.499 6.50048 10.499Z\\" fill=\\"var(--color-text)\\"></path></svg></label><input type=\\"text\\" id=\\"tsd-search-field\\" aria-label=\\"Search\\"/></div>
+<div class=\\"field\\">
+<div id=\\"tsd-toolbar-links\\"></div></div>
+<ul class=\\"results\\">
+<li class=\\"state loading\\">Preparing search index...</li>
+<li class=\\"state failure\\">The search index is not available</li></ul><a href=\\"index.html\\" class=\\"title\\">test-addon</a></div>
+<div class=\\"table-cell\\" id=\\"tsd-widgets\\"><a href=\\"#\\" class=\\"tsd-widget tsd-toolbar-icon menu no-caption\\" data-toggle=\\"menu\\" aria-label=\\"Menu\\"><svg width=\\"16\\" height=\\"16\\" viewBox=\\"0 0 16 16\\" fill=\\"none\\"><rect x=\\"1\\" y=\\"3\\" width=\\"14\\" height=\\"2\\" fill=\\"var(--color-text)\\"></rect><rect x=\\"1\\" y=\\"7\\" width=\\"14\\" height=\\"2\\" fill=\\"var(--color-text)\\"></rect><rect x=\\"1\\" y=\\"11\\" width=\\"14\\" height=\\"2\\" fill=\\"var(--color-text)\\"></rect></svg></a></div></div></header>
+<div class=\\"container container-main\\">
+<div class=\\"col-8 col-content\\">
+<div class=\\"tsd-page-title\\">
+<h2>test-addon</h2></div>
+<div class=\\"tsd-panel tsd-typography\\"><p><a href=\\"https://badge.fury.io/js/ember-cli-typedoc\\"><img src=\\"https://badge.fury.io/js/ember-cli-typedoc.svg\\" alt=\\"npm version\\"></a>
 <a href=\\"https://github.com/Bitwise-Development/ember-cli-typedoc/actions/workflows/ci.yml\\"><img src=\\"https://github.com/Bitwise-Development/ember-cli-typedoc/actions/workflows/ci.yml/badge.svg\\" alt=\\"CI\\"></a>
 <a href=\\"https://coveralls.io/github/Bitwise-Development/ember-cli-typedoc?branch=master\\"><img src=\\"https://coveralls.io/repos/github/Bitwise-Development/ember-cli-typedoc/badge.svg?branch=master\\" alt=\\"Coverage Status\\"></a></p>
 
@@ -423,10 +494,34 @@ config.</p>
 <p>Both HTML and JSON outputs are generated to a <code>/docs</code> directory, by default. The 
 <a href=\\"https://typedoc.org/guides/options/#out\\">out</a> and <a href=\\"https://typedoc.org/guides/options/#json\\">json</a> arguments 
 properties can be unset to limit this.</p>
-<p>For example, to undo the aforementioned class member slights while limiting your output to JSON:</p>
-<pre><code class=\\"language-js\\"><span class=\\"hl-2\\">const</span><span class=\\"hl-0\\"> </span><span class=\\"hl-3\\">EmberAddon</span><span class=\\"hl-0\\"> = </span><span class=\\"hl-4\\">require</span><span class=\\"hl-0\\">(</span><span class=\\"hl-5\\">&#39;ember-cli/lib/broccoli/ember-addon&#39;</span><span class=\\"hl-0\\">);</span><br/><br/><span class=\\"hl-6\\">module</span><span class=\\"hl-0\\">.</span><span class=\\"hl-6\\">exports</span><span class=\\"hl-0\\"> = </span><span class=\\"hl-2\\">function</span><span class=\\"hl-0\\"> (</span><span class=\\"hl-7\\">defaults</span><span class=\\"hl-0\\">) {</span><br/><span class=\\"hl-0\\">  </span><span class=\\"hl-8\\">return</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">new</span><span class=\\"hl-0\\"> </span><span class=\\"hl-4\\">EmberAddon</span><span class=\\"hl-0\\">(</span><span class=\\"hl-7\\">defaults</span><span class=\\"hl-0\\">, {</span><br/><span class=\\"hl-0\\">    </span><span class=\\"hl-5\\">&#39;ember-cli-typedoc&#39;</span><span class=\\"hl-7\\">:</span><span class=\\"hl-0\\"> {</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">enabled:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">true</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">excludeExternals:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">false</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">excludePrivate:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">false</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">excludeProtected:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">false</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">excludeInternal:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">false</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">out:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">undefined</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">    },</span><br/><span class=\\"hl-0\\">  });</span><br/><span class=\\"hl-0\\">};</span>
+<p>For example, to include everything that is ignored by default while out limiting your output to JSON:</p>
+<pre><code class=\\"language-js\\"><span class=\\"hl-2\\">const</span><span class=\\"hl-0\\"> </span><span class=\\"hl-3\\">EmberAddon</span><span class=\\"hl-0\\"> = </span><span class=\\"hl-4\\">require</span><span class=\\"hl-0\\">(</span><span class=\\"hl-5\\">&#39;ember-cli/lib/broccoli/ember-addon&#39;</span><span class=\\"hl-0\\">);</span><br/><br/><span class=\\"hl-6\\">module</span><span class=\\"hl-0\\">.</span><span class=\\"hl-6\\">exports</span><span class=\\"hl-0\\"> = </span><span class=\\"hl-2\\">function</span><span class=\\"hl-0\\"> (</span><span class=\\"hl-7\\">defaults</span><span class=\\"hl-0\\">) {</span><br/><span class=\\"hl-0\\">  </span><span class=\\"hl-8\\">return</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">new</span><span class=\\"hl-0\\"> </span><span class=\\"hl-4\\">EmberAddon</span><span class=\\"hl-0\\">(</span><span class=\\"hl-7\\">defaults</span><span class=\\"hl-0\\">, {</span><br/><span class=\\"hl-0\\">    </span><span class=\\"hl-5\\">&#39;ember-cli-typedoc&#39;</span><span class=\\"hl-7\\">:</span><span class=\\"hl-0\\"> {</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">enabled:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">true</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">excludeExternals:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">false</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">excludePrivate:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">false</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">excludeProtected:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">false</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">excludeInternal:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">false</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">      </span><span class=\\"hl-7\\">out:</span><span class=\\"hl-0\\"> </span><span class=\\"hl-2\\">null</span><span class=\\"hl-0\\">,</span><br/><span class=\\"hl-0\\">    },</span><br/><span class=\\"hl-0\\">  });</span><br/><span class=\\"hl-0\\">};</span>
 </code></pre>
-</div></div><div class=\\"col-4 col-menu menu-sticky-wrap menu-highlight\\"><nav class=\\"tsd-navigation primary\\"><ul><li class=\\"current\\"><a href=\\"modules.html\\">Exports</a></li></ul></nav><nav class=\\"tsd-navigation secondary menu-sticky\\"><ul><li class=\\"tsd-kind-class\\"><a href=\\"classes/default.html\\" class=\\"tsd-kind-icon\\">default</a></li></ul></nav></div></div></div><footer class=\\"with-border-bottom\\"><div class=\\"container\\"><h2>Legend</h2><div class=\\"tsd-legend-group\\"><ul class=\\"tsd-legend\\"><li class=\\"tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited\\"><span class=\\"tsd-kind-icon\\">Inherited constructor</span></li></ul></div><h2>Settings</h2><p>Theme <select id=\\"theme\\"><option value=\\"os\\">OS</option><option value=\\"light\\">Light</option><option value=\\"dark\\">Dark</option></select></p></div></footer><div class=\\"container tsd-generator\\"><p>Generated using <a href=\\"https://typedoc.org/\\" target=\\"_blank\\">TypeDoc</a></p></div><div class=\\"overlay\\"></div><script src=\\"assets/main.js\\"></script></body></html>"
+</div></div>
+<div class=\\"col-4 col-menu menu-sticky-wrap menu-highlight\\">
+<div class=\\"tsd-navigation settings\\">
+<details class=\\"tsd-index-accordion\\"><summary class=\\"tsd-accordion-summary\\">
+<h3><svg width=\\"20\\" height=\\"20\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\"><path d=\\"M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z\\" fill=\\"var(--color-text)\\"></path></svg> Settings</h3></summary>
+<div class=\\"tsd-accordion-details\\">
+<div class=\\"tsd-filter-visibility\\">
+<h4 class=\\"uppercase\\">Member Visibility</h4><form>
+<ul id=\\"tsd-filter-options\\">
+<li class=\\"tsd-filter-item\\"><label class=\\"tsd-filter-input\\"><input type=\\"checkbox\\" id=\\"tsd-filter-inherited\\" name=\\"inherited\\" checked/><svg width=\\"32\\" height=\\"32\\" viewBox=\\"0 0 32 32\\" aria-hidden=\\"true\\"><rect class=\\"tsd-checkbox-background\\" width=\\"30\\" height=\\"30\\" x=\\"1\\" y=\\"1\\" rx=\\"6\\" fill=\\"none\\"></rect><path class=\\"tsd-checkbox-checkmark\\" d=\\"M8.35422 16.8214L13.2143 21.75L24.6458 10.25\\" stroke=\\"none\\" stroke-width=\\"3.5\\" stroke-linejoin=\\"round\\" fill=\\"none\\"></path></svg><span>Inherited</span></label></li></ul></form></div>
+<div class=\\"tsd-theme-toggle\\">
+<h4 class=\\"uppercase\\">Theme</h4><select id=\\"theme\\"><option value=\\"os\\">OS</option><option value=\\"light\\">Light</option><option value=\\"dark\\">Dark</option></select></div></div></details></div>
+<nav class=\\"tsd-navigation primary\\">
+<details class=\\"tsd-index-accordion\\" open><summary class=\\"tsd-accordion-summary\\">
+<h3><svg width=\\"20\\" height=\\"20\\" viewBox=\\"0 0 24 24\\" fill=\\"none\\"><path d=\\"M4.93896 8.531L12 15.591L19.061 8.531L16.939 6.409L12 11.349L7.06098 6.409L4.93896 8.531Z\\" fill=\\"var(--color-text)\\"></path></svg> Modules</h3></summary>
+<div class=\\"tsd-accordion-details\\">
+<ul>
+<li class=\\"current selected\\"><a href=\\"modules.html\\">test-<wbr/>addon</a>
+<ul></ul></li></ul></div></details></nav>
+<nav class=\\"tsd-navigation secondary menu-sticky\\">
+<ul>
+<li class=\\"tsd-kind-class\\"><a href=\\"classes/default.html\\" class=\\"tsd-index-link\\"><svg class=\\"tsd-kind-icon\\" width=\\"24\\" height=\\"24\\" viewBox=\\"0 0 24 24\\"><rect fill=\\"var(--color-icon-background)\\" stroke=\\"var(--color-ts-class)\\" stroke-width=\\"1.5\\" x=\\"1\\" y=\\"1\\" width=\\"22\\" height=\\"22\\" rx=\\"6\\" id=\\"icon-128-path\\"></rect><path d=\\"M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z\\" fill=\\"var(--color-text)\\" id=\\"icon-128-text\\"></path></svg>default</a></li></ul></nav></div></div>
+<div class=\\"container tsd-generator\\">
+<p>Generated using <a href=\\"https://typedoc.org/\\" target=\\"_blank\\">TypeDoc</a></p></div>
+<div class=\\"overlay\\"></div><script src=\\"assets/main.js\\"></script></body></html>"
 `;
 
 exports[`addon documentation generation only creates JSON output when configured 1`] = `
@@ -435,7 +530,9 @@ Object {
     Object {
       "children": Array [
         Object {
-          "flags": Object {},
+          "flags": Object {
+            "isExternal": true,
+          },
           "id": 2,
           "inheritedFrom": Object {
             "name": "Component.constructor",
@@ -447,11 +544,18 @@ Object {
           "signatures": Array [
             Object {
               "comment": Object {
-                "shortText": "Constructs a new component and assigns itself the passed properties. You
+                "summary": Array [
+                  Object {
+                    "kind": "text",
+                    "text": "Constructs a new component and assigns itself the passed properties. You
 should not construct new components yourself. Instead, Glimmer will
 instantiate new components automatically as it renders.",
+                  },
+                ],
               },
-              "flags": Object {},
+              "flags": Object {
+                "isExternal": true,
+              },
               "id": 3,
               "inheritedFrom": Object {
                 "name": "Component.constructor",
@@ -462,8 +566,9 @@ instantiate new components automatically as it renders.",
               "name": "new default",
               "parameters": Array [
                 Object {
-                  "comment": Object {},
-                  "flags": Object {},
+                  "flags": Object {
+                    "isExternal": true,
+                  },
                   "id": 4,
                   "kind": 32768,
                   "kindString": "Parameter",
@@ -474,18 +579,18 @@ instantiate new components automatically as it renders.",
                   },
                 },
                 Object {
-                  "comment": Object {
-                    "shortText": "
-",
+                  "flags": Object {
+                    "isExternal": true,
                   },
-                  "flags": Object {},
                   "id": 5,
                   "kind": 32768,
                   "kindString": "Parameter",
                   "name": "args",
                   "type": Object {
                     "declaration": Object {
-                      "flags": Object {},
+                      "flags": Object {
+                        "isExternal": true,
+                      },
                       "id": 6,
                       "kind": 65536,
                       "kindString": "Type literal",
@@ -502,11 +607,20 @@ instantiate new components automatically as it renders.",
               },
             },
           ],
+          "sources": Array [
+            Object {
+              "character": 4,
+              "fileName": "node_modules/@glimmer/component/dist/types/addon/-private/component.d.ts",
+              "line": 134,
+            },
+          ],
         },
       ],
       "extendedTypes": Array [
         Object {
-          "name": "Component",
+          "name": "default",
+          "package": "@glimmer/component",
+          "qualifiedName": "Component",
           "type": "reference",
         },
       ],
@@ -516,7 +630,6 @@ instantiate new components automatically as it renders.",
           "children": Array [
             2,
           ],
-          "kind": 512,
           "title": "Constructors",
         },
       ],
@@ -529,6 +642,7 @@ instantiate new components automatically as it renders.",
           "character": 21,
           "fileName": "test-packages/test-addon/addon/components/test-component.ts",
           "line": 3,
+          "url": "https://github.com/Bitwise-Development/ember-cli-typedoc/blob/d42f676/test-packages/test-addon/addon/components/test-component.ts#L3",
         },
       ],
     },
@@ -539,7 +653,6 @@ instantiate new components automatically as it renders.",
       "children": Array [
         1,
       ],
-      "kind": 128,
       "title": "Classes",
     },
   ],
@@ -553,6 +666,7 @@ instantiate new components automatically as it renders.",
       "character": 0,
       "fileName": "test-packages/test-addon/addon/components/test-component.ts",
       "line": 1,
+      "url": "https://github.com/Bitwise-Development/ember-cli-typedoc/blob/d42f676/test-packages/test-addon/addon/components/test-component.ts#L1",
     },
   ],
 }
