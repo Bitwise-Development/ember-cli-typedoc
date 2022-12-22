@@ -1,0 +1,38 @@
+{
+  "git": {
+    "commitMessage": "chore: release v${version}",
+    "tagName": "v${version}"
+  },
+
+  "github": {
+    "release": true
+  },
+
+  "hooks": {
+    "before:release": "cp ./CHANGELOG.md ../../CHANGELOG.md && cp ./README.md ../../README.md",
+    "before:git:release": "git add -A"
+  },
+
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {
+            "type": "chore",
+            "section": "Chores"
+          }
+        ]
+      }
+    }
+  }
+}

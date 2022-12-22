@@ -1,31 +1,21 @@
-name: Release
+name: Version & Publish
 
 on:
   workflow_dispatch:
-  push:
-    tags:
-      - 'v*'
 
 jobs:
-  release:
-    name: Release
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: volta-cli/action@v3
         with:
-          node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-      - name: auto-dist-tag
-        run: npx auto-dist-tag --write
-        working-directory: packages/ember-cli-typedoc
-      - name: copy readme
-        run: cp README.md packages/ember-cli-typedoc/README.md
-      - name: copy changelog
-        run: cp CHANGELOG.md packages/ember-cli-typedoc/CHANGELOG.md
-
-      - run: npm publish
-        working-directory: packages/ember-cli-typedoc
+      - run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+      - run: npm ci --no-audit
+      - run: npm run release -- --ci
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

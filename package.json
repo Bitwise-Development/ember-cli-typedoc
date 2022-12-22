@@ -12,7 +12,7 @@
     "url": "https://github.com/Bitwise-Development/ember-cli-typedoc.git"
   },
   "scripts": {
-    "release": "dotenv release-it",
+    "release": "npm run release -w ember-cli-typedoc",
     "test": "jest --runInBand",
     "test:coverage": "nyc --clean jest --runInBand --collectCoverage=true"
   },
@@ -21,14 +21,10 @@
     "test-packages/*"
   ],
   "devDependencies": {
-    "@release-it/conventional-changelog": "^4.1.0",
     "chai-files": "^1.4.0",
-    "dotenv-cli": "^4.1.1",
     "execa": "^5.1.1",
     "jest": "^27.4.7",
-    "nyc": "^15.1.0",
-    "release-it": "^14.12.3",
-    "release-it-yarn-workspaces": "^2.0.1"
+    "nyc": "^15.1.0"
   },
   "jest": {
     "collectCoverage": false,
@@ -54,50 +50,6 @@
   "volta": {
     "node": "18.12.1",
     "npm": "8.19.2"
-  },
-  "release-it": {
-    "npm": false,
-    "git": {
-      "tagName": "v${version}",
-      "commitMessage": "chore: release ${version}"
-    },
-    "github": {
-      "release": true,
-      "tokenRef": "GITHUB_AUTH"
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "infile": "CHANGELOG.md",
-        "preset": {
-          "name": "conventionalcommits",
-          "types": [
-            {
-              "type": "feat",
-              "section": "Features"
-            },
-            {
-              "type": "fix",
-              "section": "Bug Fixes"
-            },
-            {
-              "type": "chore",
-              "section": "Chores"
-            }
-          ]
-        }
-      },
-      "release-it-yarn-workspaces": {
-        "publish": false,
-        "additionalManifests": {
-          "dependencyUpdates": [
-            "test-packages/*/package.json"
-          ]
-        },
-        "workspaces": [
-          "packages/*"
-        ]
-      }
-    }
   },
   "version": "1.1.0",
   "dependencies": {

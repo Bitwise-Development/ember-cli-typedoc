@@ -1,0 +1,44 @@
+{
+  "npm": false,
+  "git": {
+    "tagName": "v${version}",
+    "commitMessage": "chore: release ${version}"
+  },
+  "github": {
+    "release": true,
+    "tokenRef": "GITHUB_AUTH"
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "infile": "CHANGELOG.md",
+      "preset": {
+        "name": "conventionalcommits",
+        "types": [
+          {
+            "type": "feat",
+            "section": "Features"
+          },
+          {
+            "type": "fix",
+            "section": "Bug Fixes"
+          },
+          {
+            "type": "chore",
+            "section": "Chores"
+          }
+        ]
+      }
+    },
+    "release-it-yarn-workspaces": {
+      "publish": false,
+      "additionalManifests": {
+        "dependencyUpdates": [
+          "test-packages/*/package.json"
+        ]
+      },
+      "workspaces": [
+        "packages/*"
+      ]
+    }
+  }
+}
